@@ -94,8 +94,8 @@ MOD_SUBLABELS = {"LALT": "Option", "RALT": "Option", "LCTRL": "Ctrl",
 # 辞書にないノードはキーマップの label プロパティを使う
 LAYER_TITLES = {
     "default_layer": None,
-    "layer1": "Number&Arrow",
-    "layer2": "SYMBOL & Bluetooth",
+    "layer1": "Number&Bluetooth",
+    "layer2": "SYMBOL & Arrow",
     "layer3": "AUTO MOUSE",
 }
 

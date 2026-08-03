@@ -7,10 +7,10 @@
 Layer 0 QWERTY
 <img width="1280" height="690" alt="Image" src="images/layer0.png" />
 
-Layer 1 NUMBER & ARROW
+Layer 1 NUMBER & Bluetooth
 <img width="1280" height="690" alt="Image" src="images/layer1.png" />
 
-Layer 2 SYMBOL & Bluetooth
+Layer 2 SYMBOL & ARROW
 <img width="1280" height="690" alt="Image" src="images/layer2.png" />
 
 Layer 3 AUTO MOUSE
