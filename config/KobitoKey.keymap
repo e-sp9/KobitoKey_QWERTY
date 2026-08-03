@@ -58,10 +58,10 @@
         layer2 {
             label = "SYMBOL";
             bindings = <
-&kp RPAR   &kp EXCL  &kp AT     &kp HASH   &trans  &kp MINUS  &kp EQUAL  &kp UP    &trans     &trans
-&kp PLUS   &kp DLLR  &kp PRCNT  &kp CARET  &trans  &kp PLUS   &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&kp GRAVE  &kp AMPS  &kp ASTRK  &kp LPAR   &trans  &kp ASTRK  &kp SLASH  &kp LBKT  &kp RBKT   &kp BSLH
-&trans     &trans    &trans     &trans     &trans  &trans     &trans     &trans    &trans     &trans
+&kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT  &kp MINUS  &kp EQUAL  &kp UP    &trans     &trans
+&kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &kp PLUS   &kp LEFT   &kp DOWN  &kp RIGHT  &trans
+&kp GRAVE  &trans    &trans     &trans    &trans     &kp ASTRK  &kp SLASH  &kp LBKT  &kp RBKT   &kp BSLH
+&trans     &trans    &trans     &trans    &trans     &trans     &trans     &trans    &trans     &trans
             >;
         };
 
