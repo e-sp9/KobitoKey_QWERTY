@@ -1,0 +1,21 @@
+name: Keymap images check
+# キーマップを変更したのに README 用のレイヤー画像を更新し忘れていないかを検証する。
+# 画像生成時に scripts/generate_keymap_images.py が images/.keymap-hash に
+# 「キーマップ + 生成スクリプト」のハッシュを記録するので、ここで照合する。
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify images are up to date with keymap
+        run: |
+          expected=$(cat config/KobitoKey.keymap scripts/generate_keymap_images.py | sha256sum | cut -d' ' -f1)
+          actual=$(cat images/.keymap-hash 2>/dev/null || echo missing)
+          if [ "$expected" != "$actual" ]; then
+            echo "::error::images/ がキーマップと同期していません。'python3 scripts/generate_keymap_images.py' を実行して画像を再生成し、コミットしてください。"
+            exit 1
+          fi
+          echo "images/ はキーマップと同期しています"
